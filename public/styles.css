@@ -1,0 +1,188 @@
+/* public/styles.css */
+
+/* styles.css */
+
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  background-color: #FFDFB9;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+h1, h2 {
+  color: #A4193D;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  color: #A4193D;
+}
+
+button[type="submit"] {
+  background-color: #A4193D;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: #8f1437;
+}
+
+form {
+  margin-top: 20px;
+  text-align: center;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  background-color: #fff;
+  margin: 10px 0;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 300px;
+}
+
+li button {
+  background-color: #FFDFB9;
+  color: #A4193D;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+li button:hover {
+  background-color: #f5d0cd;
+}
+
+* Styling for form input fields */
+form input[type="text"],
+form input[type="number"],
+form select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #A4193D;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+/* Styling for expense and income buttons */
+button[type="submit"],
+button[type="reset"] {
+  background-color: #A4193D;
+  color: #fff;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover,
+button[type="reset"]:hover {
+  background-color: #8f1437;
+}
+
+/* Add any additional styles here */
+
+form select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid hsl(344, 74%, 37%);
+  border-radius: 5px;
+  box-sizing: border-box;
+  background-color: #FFDFB9;
+  color: #A4193D;
+}
+
+/* Styling for select options */
+form select option {
+  background-color: #FFDFB9;
+  color: #A4193D;
+}
+
+form label,
+form input[type="text"],
+form input[type="number"] {
+  display: block;
+  width: 100%;
+  margin-bottom: 15px;
+  box-sizing: border-box;
+}
+
+#content-total-overview {
+  display: none;
+  padding: 20px;
+  background-color: #f4f4f4;
+  border-radius: 8px;
+  text-align: center;
+}
+
+#content-total-overview p {
+  margin: 10px 0;
+  font-size: 16px;
+  color: #333;
+}
+
+/* Style for active tab content */
+input:checked+#content-total-overview {
+  display: block;
+}
+
+button {
+  background-color: #4CAF50; /* Green background */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #45a049; 
+}
+
+#totalOverview {
+  background-color: #f4f4f4;  /*Blue background color */
+  color: #A4193D;
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+#totalOverview h2 {
+  color: #A4193D; /* White text color for h2 */
+}
+
+#totalOverview p {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+#totalOverview p span {
+  font-weight: bold;
+}
